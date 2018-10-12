@@ -1,0 +1,6 @@
+name: OvalDrawer
+main: com.locydragon.odr.OvalDrawer
+version: 1.0.0
+author: [LocyDragon]
+commands:
+  odr:
