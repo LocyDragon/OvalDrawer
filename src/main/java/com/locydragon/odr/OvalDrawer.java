@@ -18,6 +18,9 @@ public class OvalDrawer extends JavaPlugin {
 			Location center = p.getLocation();
 			double a = Double.valueOf(args[0]);
 			double b = Double.valueOf(args[1]);
+			if (!(a >= b)) {
+				throw new IllegalArgumentException();
+			}
 			World playerWorld = center.getWorld();
 			findOval(center, a, b).forEach(x -> playerWorld.playEffect(x, Effect.HAPPY_VILLAGER, 1));
 			return false;
