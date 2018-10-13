@@ -59,6 +59,7 @@ public class OvalDrawer extends JavaPlugin {
 				y = -y;
 			}
 			cloner.add(x, 0D, y);
+			locationSet.add(cloner);
 		}
 		return locationSet;
 	}
